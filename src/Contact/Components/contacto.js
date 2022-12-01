@@ -28,8 +28,8 @@ Method="POST">
             </div>
           <div class="col-md-6 col-sm-12">
             <div class="styled-input">
-              <label htmlFor="telefono" required></label>
-              <input value={user.telefono} onChange={handleChange} type="text" name="telefono" placeholder="Ingrese su telefono"/>
+              <label htmlFor="telefono" type="number" required></label>
+              <input value={user.telefono} onChange={handleChange} type="number" name="telefono" placeholder="Ingrese su telefono"/>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
