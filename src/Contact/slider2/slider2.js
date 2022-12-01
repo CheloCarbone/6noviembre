@@ -12,7 +12,7 @@ function Slider2() {
         <Row className="justify-content-md-center"> 
         <Col xs={6}>
         <div class="text">
-         <h2>Hábitad Natural</h2>
+         <h2>Hábitat Natural</h2>
          <p>El hábitat puede ser considerado como la suma de los factores del medio ambiente que una especie animal o vegetal requiere para sobrevivir y reproducirse en un área dada. La combinación de factores bióticos y abióticos dentro de una unidad de vegetación que tiene influencia en el ciclo de vida de los animales.</p>
         </div>
         </Col>

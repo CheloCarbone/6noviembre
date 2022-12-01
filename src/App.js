@@ -18,7 +18,7 @@ function App() {
           <Navbar.Brand href="#home">Vida Silvestre</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#textual">Que hacemos?</Nav.Link>
-            <Nav.Link href="#habitad">Habitad Natural</Nav.Link>
+            <Nav.Link href="#habitat">Habitat Natural</Nav.Link>
             <Nav.Link href="#contacto">Contactanos!</Nav.Link>
           </Nav>
         </Container>
@@ -31,7 +31,7 @@ function App() {
     <AutoLayoutExample />
     </div>
       <Acordeon />
-    <div id="habitad">
+    <div id="habitat">
    <Slider2/>
    </div>
    <div id="contacto">
