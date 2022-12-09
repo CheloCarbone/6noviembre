@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import UncontrolledExample from './slider/index'
+import Gallery from './slider/index'
 import Contact from './Contact/Form'
 import AutoLayoutExample from './texto/texto'
-import Acordeon from './imagencondesplegable/index'
+import ResponsiveAutoExample from './imagencondesplegable/index2'
 import Slider2 from './Contact/slider2/slider2'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -25,12 +25,12 @@ function App() {
       </Navbar>
       </div>
      <div>
-   <UncontrolledExample />
+   <Gallery />
    </div>
    <div id="textual">
     <AutoLayoutExample />
     </div>
-      <Acordeon />
+      <ResponsiveAutoExample />
     <div id="habitat">
    <Slider2/>
    </div>
