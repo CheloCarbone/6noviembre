@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Gallery from './slider/index'
 import Contact from './Contact/Form'
-import AutoLayoutExample from './texto/texto'
+import ResponsiveExample from './texto/index2.js'
 import ResponsiveAutoExample from './imagencondesplegable/index2'
 import Slider2 from './Contact/slider2/slider2'
 import Container from 'react-bootstrap/Container';
@@ -28,7 +28,7 @@ function App() {
    <Gallery />
    </div>
    <div id="textual">
-    <AutoLayoutExample />
+    <ResponsiveExample />
     </div>
       <ResponsiveAutoExample />
     <div id="habitat">
