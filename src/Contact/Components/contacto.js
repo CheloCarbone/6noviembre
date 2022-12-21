@@ -4,8 +4,8 @@ import "./style.css" ;
 const Formu = ({ user, handleChange, handleSubmit, sucess, error }) => {
   const disabled = !(
     user.nombre &&
+    user.mail &&
     user.telefono &&
-    user.correo &&
     user.mensaje
   );
   return (
@@ -34,8 +34,8 @@ Method="POST">
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="styled-input" style={{float:"right"}}>
-              <label htmlFor="correo" required></label>
-              <input value={user.correo} onChange={handleChange} type="email"name="correo" placeholder="Ingrese su correo"/>
+              <label htmlFor="mail" required></label>
+              <input value={user.mail} onChange={handleChange} type="email"name="mail" placeholder="Ingrese su correo"/>
             </div>
           </div>
             <div class="col-xs-12">
