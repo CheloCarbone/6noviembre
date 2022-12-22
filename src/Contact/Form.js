@@ -23,7 +23,9 @@ const Contact = () => {
     }).then((response)=>{
         console.log(response);
         setUser({nombre: "", mail: "", telefono: "", mensaje: ""});
+        setSucess (true)
     }).catch((response)=>{
+        setError(true)
 
     })
 }
