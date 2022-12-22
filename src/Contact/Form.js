@@ -1,9 +1,9 @@
-import Formu from "./Components/contacto"
+import Form from "./Components/contacto"
 import {useState} from "react";
 import axios from "axios";
 
-const Contact = () => {
-    const [user, setUser] = useState ({nombre: "", mail: "", telefono: "",  mensaje: "" })
+const Contact = () =>{
+    const[user, setUser] = useState ({nombre: "", mail: "", telefono: "",  mensaje: ""})
     const[sucess, setSucess]= useState(false)
     const[error, setError]= useState(false)
 
@@ -15,7 +15,7 @@ const Contact = () => {
         setUser({...user, [prop]: value}) //spread operator
     }
     const handleSubmit = (event)=>{
-         event.preventDefault();
+         event.preventDefault()
     axios({
         url: "http://127.0.0.1:8000/api/insertarCliente",
         method: "POST",
@@ -30,7 +30,7 @@ const Contact = () => {
     })
 }
     return(
-        <Formu user={user} handleChange={handleChange} handleSubmit={handleSubmit} sucess={sucess} error={error}/>
+        <Form user={user} handleChange={handleChange} handleSubmit={handleSubmit} sucess={sucess} error={error}/>
     )
 }
 

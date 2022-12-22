@@ -1,13 +1,8 @@
 import React from "react";
 import "./style.css" ;
 
-const Formu = ({ user, handleChange, handleSubmit, sucess, error }) => {
-  const disabled = !(
-    user.nombre &&
-    user.mail &&
-    user.telefono &&
-    user.mensaje
-  );
+const Form = ({ user, handleChange, handleSubmit, sucess, error }) => {
+  const disabled = !(user.nombre && user.mail && user.telefono && user.mensaje)
   return (
     <div>
     <div class="container">
@@ -17,13 +12,12 @@ const Formu = ({ user, handleChange, handleSubmit, sucess, error }) => {
             <div class="row">
 			<h4>Queremos leer tu mensaje!</h4>
 	</div>
-        <form onSubmit={handleSubmit} Action="https://formspree.io/f/xyyvqpln" 
-Method="POST">
+        <form onSubmit={handleSubmit} Method="POST">
         <div class="row input-container">
             <div class="col-xs-12">
               <div class="styled-input wide">
                 <label htmlFor="nombre" required> </label>
-                <input value={user.nombre} onChange={handleChange}type="text"name="nombre" placeholder="Ingrese su nombre"/>
+                <input value={user.nombre} onChange={handleChange}type="text" name="nombre" placeholder="Ingrese su nombre"/>
               </div>
             </div>
           <div class="col-md-6 col-sm-12">
@@ -41,20 +35,18 @@ Method="POST">
             <div class="col-xs-12">
               <div class="styled-input wide">
                 <label htmlFor="mensaje" required></label>
-                  <textarea value={user.mensaje} onChange={handleChange} name="mensaje"placeholder="Ingrese su mensaje" />
-                     <input class="btn-lrg submit-btn" disabled={disabled} type="submit" />
+                  <textarea value={user.mensaje} onChange={handleChange} name="mensaje" placeholder="Ingrese su mensaje"/>
+                     <input class="btn-lrg submit-btn" disabled={disabled} type="submit"/>
               </div>
             </div>
         </div>
         </form>
-        </div>
-
-
       {sucess && <p>Mensaje enviado correctamente!</p>}
       {error && <p>Ocurrio un error al intentar enviar el mensaje!</p>}
+    </div>
     </div>
 
   );
 };
 
-export default Formu;
+export default Form;
